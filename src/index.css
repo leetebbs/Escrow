@@ -1,0 +1,144 @@
+body {
+  background-color: #473f2e;
+  display: flex;
+  font-family: "Muli", sans-serif;
+}
+
+h1 {
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #e9dd8c;
+  margin: 20px;
+  width: 50%;
+}
+
+input[type="text"] {
+  padding: 6px;
+  font-size: 18px;
+  background-color: #ad9d84;
+}
+
+.contract {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+}
+
+.button {
+  box-shadow: inset 0px 1px 0px 0px #9fa81b;
+  background: linear-gradient(to bottom, #e3ca4b 5%, #e8d37f 100%);
+  background-color: #e3ca4b;
+  border-radius: 6px;
+  border: 1px solid #f2ce85;
+  display: inline-block;
+  cursor: pointer;
+  color: #473f2e;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px 15px;
+  text-decoration: none;
+  width: 50px;
+  margin: auto;
+}
+.button:hover {
+  background: linear-gradient(to bottom, #e8d37f 5%, #e3ca4b 100%);
+  background-color: #e8d37f;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+.existing-contract ul {
+  padding: 10px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+.existing-contract ul > li {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+
+.existing-contract ul > li > div {
+  margin: 0 5px;
+}
+
+.existing-contract ul > li > :first-child {
+  font-weight: bold;
+}
+
+.existing-contract .complete {
+  color: #5aa75a;
+  text-align: center;
+}
+
+.existing {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ad9d84;
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.existingButton {
+  box-shadow: inset 0px 1px 0px 0px #9fa81b;
+  background: linear-gradient(to bottom, #e3ca4b 5%, #e8d37f 100%);
+  background-color: #e3ca4b;
+  border-radius: 6px;
+  border: 1px solid #f2ce85;
+  display: inline-block;
+  cursor: pointer;
+  color: #473f2e;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 9px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.contract-address {
+  color: #eee;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .contract {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .existing {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #ad9d84;
+    border-radius: 1rem;
+    font-size: 12px;
+    width: 90%;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #e9dd8c;
+    margin: 20px;
+    width: 90%;
+  }
+}
